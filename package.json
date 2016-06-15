@@ -1,0 +1,31 @@
+{
+  "name": "karma-polyfill-service",
+  "version": "0.0.0",
+  "description": "karma plugin for automatic polyfill injection using Financial-Times/polyfill-service",
+  "main": "karma-polyfill-service.coffee",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nl0/karma-polyfill-service.git"
+  },
+  "keywords": [
+    "karma",
+    "karma-plugin",
+    "polyfill"
+  ],
+  "author": "nl_0 <nl.imbecile@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nl0/karma-polyfill-service/issues"
+  },
+  "homepage": "https://github.com/nl0/karma-polyfill-service#readme",
+  "dependencies": {
+    "polyfill-service": "^3.6"
+  },
+  "peerDependencies": {
+    "karma": "^0.13"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10"
+  }
+}
