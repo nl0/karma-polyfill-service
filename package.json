@@ -1,6 +1,6 @@
 {
   "name": "karma-polyfill-service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "karma plugin for automatic polyfill injection using Financial-Times/polyfill-service",
   "main": "karma-polyfill-service.coffee",
   "scripts": {},
