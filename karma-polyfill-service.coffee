@@ -21,7 +21,7 @@ polyfill = ({features = true, path} = {}, files, protocol, hostname, port) ->
       features: features
       unknown: 'polyfill'
     .then (js) ->
-      res.setHeader 'Cache-Control', "public, max-age=#{1000 * 60 * 60}"
+      res.setHeader 'Cache-Control', "public, max-age=#{60 * 60}"
       res.setHeader 'Content-Type', 'application/javascript; charset=utf-8'
       res.setHeader 'Vary', 'User-Agent'
       res.end js
