@@ -5,11 +5,21 @@ url = require 'url'
 polyfill = ({features = true, path} = {}, files, protocol, hostname, port) ->
   path ?= '/polyfill.js'
   features = default: {} if features == true
+
   files.unshift
     pattern: "#{protocol}//#{hostname}:#{port}#{path}"
     watch: false
     included: true
     served: false
+    nocache: false
+
+  # PhantomJS throws when using promise polyfill provided by the polyfill-service,
+  # so we use the one that works
+  files.unshift
+    pattern: require.resolve 'promise-polyfill'
+    watch: false
+    included: true
+    served: true
     nocache: false
 
   (req, res, next) ->
