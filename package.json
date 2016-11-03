@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/nl0/karma-polyfill-service#readme",
   "dependencies": {
-    "polyfill-service": "^3.6",
+    "polyfill-service": "~3.11",
     "promise-polyfill": "^5.2.1"
   },
   "peerDependencies": {
